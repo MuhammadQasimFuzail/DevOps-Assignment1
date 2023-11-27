@@ -43,11 +43,31 @@ const projectList = [
     }
   ];
   
+  const certificationList = [
+    {
+      title: "Google Cloud Certified – Professional Cloud Architect",
+      issuer: "Google Cloud",
+      date: "2020-10-05"
+    },
+    {
+      title: "AWS Certified Solutions Architect – Associate",
+      issuer: "Amazon Web Services",
+      date: "2021-05-19"
+    },
+    {
+      title: "Microsoft Certified: Azure Solutions Architect Expert",
+      issuer: "Microsoft",
+      date: "2022-04-12"
+    }
+  ];
+  
   const technologyFilterInput = document.getElementById('technologyFilter');
   const projectListElement = document.getElementById('projectList');
   const educationListElement = document.getElementById('educationList');
+  const certificationListElement = document.getElementById('certificationList');
   
   technologyFilterInput.addEventListener('keyup', filterProjects);
+
   
   function filterProjects() {
     const technologyFilterText = technologyFilterInput.value.toLowerCase();
@@ -82,4 +102,8 @@ const projectList = [
     courseListItem.textContent = `${course.course} (Grade ${course.grade})`;
     educationListElement.appendChild(courseListItem);
   });
+
+  
+  
+  
   
