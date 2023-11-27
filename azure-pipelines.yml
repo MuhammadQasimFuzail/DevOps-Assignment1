@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: Assignment1Agent
 
 steps:
 - task: ArchiveFiles@2
